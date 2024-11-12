@@ -20,7 +20,19 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = []
+dependencies = [
+  "apex==0.9.10.dev0",
+  "boto3==1.24.28",
+  "botocore==1.27.59",
+  "matplotlib==3.5.3",
+  "networkx==2.6.3",
+  "numpy==1.21.5",
+  "Requests==2.31.0",
+  "scikit_learn==1.0.2",
+  "scipy==1.7.3",
+  "torch==1.13.1",
+  "tqdm==4.64.1"
+]
 
 [project.urls]
 Documentation = "https://github.com/trung.pq/attattr#readme"
@@ -33,11 +45,6 @@ path = "src/attattr/__about__.py"
 [tool.hatch.envs.types]
 extra-dependencies = [
   "mypy>=1.0.0",
-  "torch>=0.4.1",
-  "numpy",
-  "boto3",
-  "requests",
-  "tqdm"
 ]
 [tool.hatch.envs.types.scripts]
 check = "mypy --install-types --non-interactive {args:src/attattr tests}"
