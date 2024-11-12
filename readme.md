@@ -3,13 +3,16 @@
 This repository contains the implementation for AAAI-2021 paper [Self-Attention Attribution: Interpreting Information Interactions Inside Transformer](https://arxiv.org/pdf/2004.11207.pdf). It includes the code for generating the self-attention attribution score, pruning attention heads with our method, constructing the attribution tree and extracting the adversarial triggers. All of our experiments are conducted on bert-base-cased model, our methods can also be easily transfered to other Transformer-based models.
 
 ## Requirements
+
+* `Python 3.7.16`, you could create an enviroment using `conda`
+
 ```bash
 pip install -r requirements.txt
 ```
 
 You can install attattr from source:
 ```bash
-git clone https://github.com/YRdddream/attattr
+git clone https://github.com/trungpq27/attattr
 cd attattr
 pip install -e .
 ```
